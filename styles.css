@@ -1,0 +1,195 @@
+/* --------------------------------------------------
+   REGLAS GENERALES Y CONFIGURACIÓN GLOBAL
+-------------------------------------------------- */
+
+/* Reinicia márgenes y paddings predeterminados, define modelo de caja y fuente base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: #fff;
+    color: #111;
+    padding: 2rem;
+}
+
+/* Degradado visual en la parte inferior de la pantalla 
+   Simula una sombra permanente incluso sin footer visible */
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.562), transparent);
+    z-index: 1;
+}
+
+/* --------------------------------------------------
+   ENCABEZADO (HEADER)
+-------------------------------------------------- */
+
+/* Layout del encabezado principal con espaciado lateral */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+/* Contenedor del perfil del autor: nombre e imagen */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Nombre del autor con estilo */
+.perfil span {
+    margin-left: 2rem;
+    font-weight: 600;
+    color: #444d5c;
+}
+
+/* Imagen de perfil circular */
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Botón de contacto por correo */
+.btn-correo {
+    padding: 0.7rem 1rem;
+    background-color: #444d5c;
+    color: rgb(235, 232, 232);
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------
+   TÍTULOS Y SUBTÍTULOS PRINCIPALES
+-------------------------------------------------- */
+
+/* Título principal de la página */
+main h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Subtítulo debajo del h1 */
+.subtitulo {
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #8b8b8b;
+}
+
+/* --------------------------------------------------
+   SECCIÓN DE TARJETAS (POSTS)
+-------------------------------------------------- */
+
+/* Contenedor que organiza todas las tarjetas horizontalmente y permite múltiples líneas */
+.tarjetas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    /* Hace que todas tengan misma altura */
+}
+
+/* Estilo base para cada tarjeta */
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 28%;
+    min-height: 500px;
+    /* Altura base, pero puede crecer si el contenido lo necesita */
+    overflow: hidden;
+    /* Evita desbordamiento de contenido */
+    transition: transform 0.3s ease;
+    /* Efecto de hover suave */
+}
+
+/* Imagen superior de cada tarjeta */
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* Escala la imagen sin distorsión */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+/* Contenido textual dentro de la tarjeta */
+.tarjeta .contenido {
+    display: flex;
+    flex-direction: column;
+    /* Permite alinear la fecha al fondo */
+    flex: 1;
+    /* Ocupa el espacio restante */
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Categoría del post (ej. país o ciudad) */
+.tarjeta .categoria {
+    color: #1f1e1e;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Título de la tarjeta (con enlace clicable) */
+.tarjeta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* Enlace del título con estilo subrayado */
+.tarjeta h3 a {
+    color: #111;
+    text-decoration: underline;
+}
+
+/* Cambio de color al pasar el mouse sobre el título */
+.tarjeta h3 a:hover {
+    color: #444d5c;
+}
+
+/* Descripción del viaje o contenido del post */
+.tarjeta .descripcion {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    /* Espaciado entre líneas para legibilidad */
+    color: #696969;
+}
+
+/* Fecha del post, alineada al final del contenido */
+.tarjeta .fecha {
+    margin-top: auto;
+    /* Empuja la fecha hacia el fondo del contenedor */
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(153, 152, 152);
+}
