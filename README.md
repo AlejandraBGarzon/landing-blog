@@ -1,5 +1,7 @@
 # 🌍 Blog de Viajes
 
+Puedes visitar la página desplegada aquí 👉 [Ver sitio en GitHub Pages](https://alejandrabgarzon.github.io/landing-blog/
+
 Este proyecto es una práctica realizada como parte de una clase de HTML y CSS, enfocada en reforzar conceptos como **`display`**, **maquetación con `flexbox`**, y el uso de propiedades básicas de diseño responsivo.
 
 ## 🧠 Objetivo
