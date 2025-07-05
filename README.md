@@ -1,7 +1,5 @@
 # 🌍 Blog de Viajes
 
-Puedes visitar la página desplegada aquí 👉 [Ver sitio en GitHub Pages](https://alejandrabgarzon.github.io/landing-blog/
-
 Este proyecto es una práctica realizada como parte de una clase de HTML y CSS, enfocada en reforzar conceptos como **`display`**, **maquetación con `flexbox`**, y el uso de propiedades básicas de diseño responsivo.
 
 ## 🧠 Objetivo
@@ -43,6 +41,12 @@ Puedes ver una muestra del diseño en la carpeta o ejecutando el archivo `index.
 ## 🧑‍💻 Autor
 
 Versión de proyecto realizado por Alejandra Bermúdez, como parte de ejercicios prácticos de clase en Fábrica de Desarrolladores Consocio Advance - Agencia Atenea.
+
+## 🚀 Sitio Web en Línea
+
+¡Haz clic para ver el proyecto en acción! 👇
+
+[![Ver en GitHub Pages](https://img.shields.io/badge/Ver%20sitio-GitHub%20Pages-blue?logo=github&style=for-the-badge)](https://alejandrabgarzon.github.io/landing-blog/)
 
 ---
 
